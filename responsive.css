@@ -1,0 +1,127 @@
+/* Responsive a tablet */
+@media (min-width:480px) and (max-width: 900px) {
+
+}
+
+/* Responsive a celulares */
+@media (max-width:480px) {
+/* Para el Index.*/
+/* Header es transversal a las páginas. */
+
+.logoTitle {
+display: inline-block;
+width: 480px;
+height: auto;
+margin-bottom: 5%;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+  padding: 1%;
+  align-self: baseline;
+}
+
+.title {
+  width: 50%;
+  font-size: 30px;
+  padding: 1%;
+  vertical-align: middle;
+}
+
+.navbar {
+  width: 480px;
+  font-size: 10px;
+  position: static;
+  top: 18%;
+  left: 0%;
+  
+}
+
+nav span {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #aaaaaa;
+  color: black;
+  margin: 5px;
+  padding: 4px;
+  border: solid #aaaaaa 0.5px;
+  border-radius: 25px;
+  transition: 1s background;
+  display: inline-block;
+}
+
+#banner {
+  width: 480px;
+  height: auto;
+}
+
+#utensilios {
+  display: none;
+} 
+
+.content {
+  width: 460px;
+  margin: 10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+ul {
+  width: 185px;
+  display: inline-block;
+}
+
+#elegirnos {
+  font-size: 12px;
+}
+
+.itemlist {
+  font-size: 10px;
+}
+
+.itemDiferencial:before {
+  content: "✂️";
+}
+
+#diferencial {
+  width: 200px;
+  height: auto;
+  margin: 5% 1%;
+  display: inline-block;
+} 
+
+#videoContainer {
+  margin: 6% 6% 0 6%;
+  display: inline-block;
+}
+
+#mapContainer {
+  margin: 0 6% 6% 6%;
+  display: inline-block;
+}
+
+.font2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.font3 {
+  font-size: 12px;
+  text-align: center;
+  margin: 1% 0;
+}
+
+#video {
+  width: 425px;
+  height: 425px;
+  
+}
+
+#mapa {
+  width: 425px;
+  height: 425px;
+}
+
+}

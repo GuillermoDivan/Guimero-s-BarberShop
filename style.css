@@ -1,0 +1,456 @@
+/* ResetCSS | v2.0 | 20110126
+http://meyerweb.com/eric/tools/css/reset/ 
+License: none (public domain)*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Para el Index.*/
+/* Body es transversal a las páginas.*/
+body {
+  background-color: #000000;
+  color: #aaaaaa;
+  font-family: "Roboto Slab", serif;
+}
+
+/* Header es transversal a las páginas. */
+header {
+  margin-bottom: 5%;
+}
+
+.logo {
+  width: 8%;
+  height: auto;
+  padding: 1%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 900;
+  padding: 1% 10% 1% 25%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.navbar {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  position: static;
+  top: 15%;
+  left: 30%;
+}
+
+nav span {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #aaaaaa;
+  color: black;
+  margin: 5px;
+  padding: 4px;
+  border: solid #aaaaaa 0.5px;
+  border-radius: 25px;
+  transition: 1s background;
+}
+
+nav span:visited {
+  background-color: #aaaaaa;
+  color: #444444;
+  cursor: pointer;
+}
+
+nav span:hover {
+  background-color: #1c6ea4;
+  cursor: pointer;
+}
+
+nav span:active {
+  background-color: #dddddd;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a:active {
+  color: #1c6ea4;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  color: #444444;
+}
+
+/*Cuerpo del home, sólo aplica a Home*/
+#banner {
+  width: 100%;
+  height: auto;
+}
+
+#utensilios {
+  width: 30%;
+  margin: 7%;
+  display: inline-block;
+} 
+
+.content {
+  width: 40%;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 7%;
+  vertical-align: top;
+  text-align: right;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.guimero {
+  font-weight: 900;
+}
+
+#mision {
+  color: #1c6ea4;
+  font-style: italic;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 27%;
+  margin: 0 7%;
+  padding: 5%;
+}
+
+#elegirnos {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.itemlist {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 500;
+  padding: 5px;
+  line-height: 2;
+}
+
+.itemDiferencial:before {
+  content: "✂️";
+}
+
+#diferencial {
+  width: 42%;
+  margin: 0 7%;
+  display: inline-block;
+} 
+
+#videoContainer {
+  margin: 7% 0 7% 7%;
+  display: inline-block;
+}
+#mapContainer {
+  margin: 7% 7% 7% 10%;
+  display: inline-block;
+}
+
+.font2 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.font3 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin: 1.5% 0 3% 0;
+}
+
+#video {
+  width: 700px;
+  height: 700px;
+}
+
+#mapa {
+  width: 700px;
+  height: 700px;
+}
+
+/* Footer es transversal a las páginas. */
+footer {
+  margin: 2.5% 0;
+  text-align: center;
+}
+
+.logoFooter {
+  width: 5%;
+  height: auto;
+}
+
+/* Para cards en Products.*/
+.cardContainer {
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 5px #1c6ea4 solid;
+  border-radius: 6%;
+  color: #000000;
+  width: 22%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 2%;
+  margin: auto 2%;
+  box-sizing: content-box;
+  transition: 0.5s transform;
+}
+
+.cardTitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.cardDescription {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.cardPrice {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.card:hover {
+  background-color: #ffffff;
+  border: Solid 10px #1c6ea4;
+  color: #000000;
+  border-radius: 6%;
+  padding: 2%;
+  cursor: pointer;
+  transform: scale(1.1);
+  transform: rotate(360deg);
+  transition: 1.5s transform;
+}
+
+.card:hover h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/* Para formulario en Contact Us.*/
+
+.contact {
+  font-size: 20px;
+  font-weight: 400;
+  width: 30%;
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 250px;
+  left: 300px;
+}
+
+#nombreApellido,
+#email,
+#celular,
+#consulta,
+#fecha,
+#hora,
+#desplegable {
+  display: block;
+  width: 300px;
+  height: 30px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.button {
+  width: 25%;
+  height: auto;
+  margin: 5px;
+  padding: 1.5px 3px;
+  border: solid #aaaaaa 1px;
+  border-radius: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #aaaaaa;
+  color: black;
+  transition: 1s background;
+}
+
+.button:hover {
+  background-color: #1c6ea4;
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #cccccc;
+  color: #1c6ea4;
+  cursor: pointer;
+}
+
+/* Para tabla en Contact us. */
+
+table {
+  width: 20%;
+  padding: 2px;
+  border: 2px solid #dddddd;
+  background-color: #aaaaaa;
+  color: #1c6ea4;
+  display: inline-block;
+  position: absolute;
+  top: 250px;
+  right: 300px;
+}
+
+thead {
+  background-color: #1c6ea4;
+  color: #aaaaaa;
+  font-size: 30px;
+}
+
+th,
+td {
+  padding: 22.5px;
+  border: 2px solid #dddddd;
+  font-size: 25px;
+}
+
+#contactUsImg {
+  width: 70%;
+  height: auto;
+  margin: 0 15%;
+}
+
+
