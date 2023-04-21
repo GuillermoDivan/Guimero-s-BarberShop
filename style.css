@@ -156,9 +156,9 @@ header {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  position: static;
+  position: absolute;
   top: 15%;
-  left: 30%;
+  left: 28%;
 }
 
 nav span {
@@ -240,12 +240,13 @@ nav a {
 ul {
   display: inline-block;
   vertical-align: top;
-  width: 27%;
-  margin: 0 7%;
+  width: 30%;
+  margin: 0 5%;
   padding: 5%;
 }
 
 #elegirnos {
+  color:#1c6ea4;
   font-size: 40px;
   font-weight: 700;
   padding: 5px;
@@ -256,7 +257,7 @@ ul {
   text-align: left;
   font-weight: 500;
   padding: 5px;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .itemDiferencial:before {
@@ -264,17 +265,21 @@ ul {
 }
 
 #diferencial {
-  width: 42%;
-  margin: 0 7%;
+  width: 45%;
+  margin: 0 5%;
   display: inline-block;
 } 
 
+#videoMapContainer {
+  text-align: center;
+  margin: 5%;
+}
+
 #videoContainer {
-  margin: 7% 0 7% 7%;
   display: inline-block;
 }
 #mapContainer {
-  margin: 7% 7% 7% 10%;
+  margin-left: 10%;
   display: inline-block;
 }
 
@@ -292,13 +297,13 @@ ul {
 }
 
 #video {
-  width: 700px;
-  height: 700px;
+  width: 550px;
+  height: 550px;
 }
 
 #mapa {
-  width: 700px;
-  height: 700px;
+  width: 550px;
+  height: 550px;
 }
 
 /* Footer es transversal a las páginas. */
@@ -356,13 +361,20 @@ footer {
   padding: 2%;
   cursor: pointer;
   transform: scale(1.1);
-  transform: rotate(360deg);
-  transition: 1.5s transform;
+  transform: rotateY(360deg);
+  transition: 2s transform;
 }
 
 .card:hover h2 {
   font-size: 40px;
   font-weight: 900;
+}
+
+#colorimetria {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 2%;
+  color:#1c6ea4;
 }
 
 /* Para formulario en Contact Us.*/
@@ -374,8 +386,8 @@ footer {
   display: inline-block;
   text-align: left;
   position: absolute;
-  top: 250px;
-  left: 300px;
+  top: 200px;
+  left: 200px;
 }
 
 #nombreApellido,
@@ -423,15 +435,16 @@ footer {
 /* Para tabla en Contact us. */
 
 table {
-  width: 20%;
+  width: 25%;
   padding: 2px;
   border: 2px solid #dddddd;
   background-color: #aaaaaa;
   color: #1c6ea4;
+  text-align: center;
   display: inline-block;
   position: absolute;
-  top: 250px;
-  right: 300px;
+  top: 210px;
+  right: 200px;
 }
 
 thead {
@@ -448,9 +461,285 @@ td {
 }
 
 #contactUsImg {
-  width: 70%;
+  width: 80%;
   height: auto;
-  margin: 0 15%;
+  margin: 0 10%;
 }
+
+/* Para cards en Proffesionals (Us).*/
+.profTitle, #workTitle {
+  color:#1c6ea4;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 200px;
+  vertical-align: middle;
+} /* Aplica a ourWork*/
+
+#inspirational {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2%;
+  margin: 1.5% 0;
+  font-style: italic;
+}
+
+#mainAuthor {
+  font-style: italic;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 400;
+  vertical-align: middle;
+  padding-right: 200px;
+}
+
+.profContainer {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.prof {
+  background-color: #111111;
+  border: 5px #1c6ea4 solid;
+  border-radius: 24px;
+  color: #aaaaaa;
+  width: 20%;
+  height: 650px;
+  display: inline-block;
+  text-align: center;
+  padding: 1%;
+  box-sizing: content-box;
+  transition: 2s transform;
+}
+
+.profName {
+  font-size: 30px;
+  font-weight: 700;
+  color:#1c6ea4;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+
+.usImage {
+  width: 75%;
+  height: auto;
+}
+
+.profSpeciality {
+  color:#1c6ea4;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3%;
+  margin-bottom: 10px;
+}
+
+.profQuote {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.author {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.prof:hover {
+  background-color: #cccccc;
+  border: Solid 5px #1c6ea4;
+  color: #000000;
+  padding: 2%;
+  cursor: pointer;
+  transform: scale(1.025);
+  transition: 2s transform;
+}
+
+.prof:hover h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#ourRoots {
+  margin: 2%;
+}
+
+.history {
+  text-transform: initial;
+  text-align: justify;
+  padding: 1%;
+  line-height: 1.1;
+}
+
+/*Para Our Work*/
+#workQuote {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2%;
+  margin: 1.5% 0;
+}
+
+.workArt {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2%;
+  margin: 1.5% 0;
+}
+
+
+
+/*GRID!!*/
+
+#hairWorkGrid {
+  width: 1495px;
+  height: 1745px;
+  background-color: #000000;
+  /*padding: 10px;*/
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 375px 375px 375px 375px;
+  grid-auto-rows: 345px;
+  grid-template-areas:
+    "A D F K"
+    "A E F L"
+    "B E G M"
+    "C I H M"
+    "C J H N";
+}
+
+#A {
+  width: 370px;
+  height: 690px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: A;
+}
+
+#B {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: B;
+}
+
+#C {
+  width: 370px;
+  height: 690px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: C;
+}
+
+#D {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: D;
+}
+
+#E {
+  width: 370px;
+  height: 690px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: E;
+}
+
+#F {
+  width: 370px;
+  height: 690px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: F;
+}
+
+#G {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: G;
+}
+
+#H {
+  width: 370px;
+  height: 690px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: H;
+}
+
+#I {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: I;
+}
+
+#J {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: J;
+}
+
+#K {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: K;
+}
+
+#L {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: L;
+}
+
+#M {
+  width: 370px;
+  height: 690px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: M;
+}
+
+#N {
+  width: 370px;
+  height: 345px;
+  border: black solid 5px;
+  object-fit: cover;
+  border-radius: 25px;
+  grid-area: N;
+}
+
 
 
