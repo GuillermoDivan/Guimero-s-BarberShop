@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://kit.fontawesome.com/adec63c507.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/adec63c507.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Products & Services</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header>
-        <img class="logo"; src="imagesGuimero'sBarberShop\GuimerosBarbershopLogo.jpg";>
-        <h1 class="title";> Guimero's Barber Shop </h1>
+      <img
+        class="logo"
+        ;
+        src="imagesGuimero'sBarberShop\GuimerosBarbershopLogo.jpg"
+        ;
+      />
+      <h1 class="title" ;>Guimero's Barber Shop</h1>
 
-        <nav class="navbar">
-            <span> <a href="index.html"> Home </a></span>
-            <span> <a href="AboutUs.html">About us </a></span>
-            <span> <a href="products.html">Products & Services </a></span>
-            <span> <a href="ourWork.html">Our work </a></span>
-            <span> <a href="contactUs.html">Contact us </a></span>
-        </nav>
-        </header>
+      <nav class="navbar">
+        <span> <a href="index.html"> Home </a></span>
+        <span> <a href="AboutUs.html">About us </a></span>
+        <span> <a href="products.html">Products & Services </a></span>
+        <span> <a href="ourWork.html">Our work </a></span>
+        <span> <a href="contactUs.html">Contact us </a></span>
+      </nav>
+    </header>
 
-        <main class="cardContainer">
-            <section class="card">
-                <h2 class="cardTitle"> Cabello </h2>
-                <img src="imagesGuimero'sBarberShop\cabello.jpg">
-                <p class="cardDescription"> Con tijera o máquina, a gusto de le cliente. </p>
-                <p class="cardPrice"> $1200.00 </p>
-            </section>
+    <!--El link de las cards "<a href="#" onclick="irAContacto(' el cabello...')" es para que 1. No salga de la página. 2. AL click llame la fx del js con su correspondiente parámetro (parte dinámica)-->
+    <main class="cardContainer">
+      <section class="card">
+        <a href="#" onclick="irAContacto(' el cabello...')">
+          <h2 class="cardTitle" id="cardTitleCabello">Cabello</h2>
+          <img src="imagesGuimero'sBarberShop\cabello.jpg" />
+          <p class="cardDescription">
+            Con tijera o máquina, a gusto de le cliente.
+          </p>
+          <p class="cardPrice">$1200.00</p>
+        </a>
+      </section>
 
-            <section class="card">
-                <h2 class="cardTitle"> Barba </h2>
-                <img src="imagesGuimero'sBarberShop\barba.jpg">
-                <p class="cardDescription"> Corte y diseño profesional de barba. </p>
-                <p class="cardPrice"> $800.00 </p>
-            </section>
+      <section class="card">
+        <a href="#" onclick="irAContacto(' la barba...')">
+          <h2 class="cardTitle" id="cardTitleBarba">Barba</h2>
+          <img src="imagesGuimero'sBarberShop\barba.jpg" />
+          <p class="cardDescription">Corte y diseño profesional de barba.</p>
+          <p class="cardPrice">$800.00</p>
+        </a>
+      </section>
 
-            <section class="card">
-                <h2 class="cardTitle">Cabello + Barba </h2>
-                <img src="imagesGuimero'sBarberShop\cabello+barba.jpg">
-                <p class="cardDescription"> Paquete completo de cabello y barba. </p>
-                <p class="cardPrice"> $1800.00 </p>
-            </section>
+      <section class="card">
+        <a href="#" onclick="irAContacto(' el cabello y la barba...')">
+          <h2 class="cardTitle" id="cardTitleCabelloBarba">Cabello + Barba</h2>
+          <img src="imagesGuimero'sBarberShop\cabello+barba.jpg" />
+          <p class="cardDescription">Paquete completo de cabello y barba.</p>
+          <p class="cardPrice">$1800.00</p>
+        </a>
+      </section>
 
-            <h4 id="colorimetria">No dudes en consultarnos por colorimetría al seleccionar tu opción.</h4>
-
-        </main>
+      <h4 id="colorimetria">
+        No dudes en consultarnos por colorimetría al seleccionar tu opción.
+      </h4>
+    </main>
 
     <footer class="center">
-        <img class="logo"; src="imagesGuimero'sBarberShop\GuimerosBarbershopLogoBW.jpg";>
-        <p> © Copyright Guimero's Barber Shop - 2023</p>
+      <img
+        class="logo"
+        ;
+        src="imagesGuimero'sBarberShop\GuimerosBarbershopLogoBW.jpg"
+        ;
+      />
+      <p>© Copyright Guimero's Barber Shop - 2023</p>
     </footer>
-    
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>

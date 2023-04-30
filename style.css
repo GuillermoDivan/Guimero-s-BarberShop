@@ -87,6 +87,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -370,6 +371,10 @@ footer {
   font-weight: 900;
 }
 
+.card a {
+color: #000000;
+}
+
 #colorimetria {
   font-size: 28px;
   font-weight: 500;
@@ -464,6 +469,32 @@ td {
   width: 80%;
   height: auto;
   margin: 0 10%;
+}
+
+#socialNetwork {
+  text-align: center;
+}
+
+.appButton {
+  width: 92px;
+  height: 92px;
+  margin: 5px;
+  padding: 5px;
+  border: solid #000000 1px;
+  border-radius: 25px;
+  background-color: #000000;
+  transition: 1s background;
+}
+
+.appButton:hover {
+  background-color: #444444;
+  cursor: pointer;
+}
+
+.app-logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
 }
 
 /* Para cards en Proffesionals (Us).*/

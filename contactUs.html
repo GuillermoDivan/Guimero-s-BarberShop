@@ -22,7 +22,8 @@
 
     <title>Contact Us</title>
   </head>
-  <body>
+  <!--"onload="iniciar()" para cargar la fx al iniciar.-->
+  <body onload="iniciar();"> 
     <header>
       <img class="logo" src="imagesGuimero'sBarberShop\GuimerosBarbershopLogo.jpg" />
       <h1 class="title">Guimero's Barber Shop</h1>
@@ -120,11 +121,20 @@
       <section>
         <img id="contactUsImg" src="imagesGuimero'sBarberShop\diferenciales.jpg" />
       </section>
+      
+      <section id="socialNetwork">
+          <button class="appButton"><a href="https://www.instagram.com/"> <img class="app-logo" src="imagesGuimero'sBarberShop\instagram.png" type="submit"> </a></button>
+          <button class="appButton"><a href="https://www.facebook.com/"> <img class="app-logo" src="imagesGuimero'sBarberShop\facebook.png" type="submit"> </a></button>
+          <button class="appButton"><a href="https://www.twitter.com/"> <img class="app-logo" src="imagesGuimero'sBarberShop\twitter.png" type="submit"> </a></button>
+      </section>
+
     </main>
 
     <footer class="center">
       <img class="logo" src="imagesGuimero'sBarberShop\GuimerosBarbershopLogoBW.jpg" />
       <p>© Copyright Guimero's Barber Shop - 2023</p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
